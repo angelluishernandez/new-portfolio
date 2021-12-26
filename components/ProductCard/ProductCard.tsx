@@ -2,13 +2,13 @@ import React from "react";
 import Image from "next/image";
 import { Product } from "../../utils/wooCommerceTypes";
 import { Card, ImageContainer, Details } from "./StyledComponents";
+import { createWooCommerceOrder } from "../../services/orders-service";
 
 interface Props {
   product: Product;
 }
 
 const ProductCard = ({ product }: Props) => {
-  console.log(product.images[0]);
   return (
     <Card>
       <ImageContainer>

@@ -1,7 +1,5 @@
 // NextJS
 
-import Head from "next/head";
-import Image from "next/image";
 import { GetStaticProps } from "next";
 
 // Styled components
@@ -10,7 +8,7 @@ import styled from "styled-components";
 
 // Api
 
-import { fetchWooCommerceProducts } from "../utils/wooCommerceApi";
+import { fetchWooCommerceProducts } from "../services/wooCommerceApi-service";
 import { Product } from "../utils/wooCommerceTypes";
 
 // Styles
